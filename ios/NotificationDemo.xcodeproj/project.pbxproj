@@ -104,7 +104,6 @@
 				582D47240E3F6202FD4C7C22 /* Pods-NotificationDemo-NotificationDemoTests.debug.xcconfig */,
 				952AEA990B253B7FE5BAD5DD /* Pods-NotificationDemo-NotificationDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
