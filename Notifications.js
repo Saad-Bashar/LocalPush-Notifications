@@ -1,5 +1,6 @@
 import PushNotification from 'react-native-push-notification';
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
+import {Platform} from 'react-native';
 class Notifications {
   constructor() {
     PushNotification.configure({
@@ -12,7 +13,7 @@ class Notifications {
         notification.finish(PushNotificationIOS.FetchResult.NoData);
       },
       popInitialNotification: true,
-      requestPermissions: true,
+      requestPermissions:Platform.OS === 'ios',
       // IOS ONLY (optional): default: all - Permissions to register.
       permissions: {
         alert: true,
